@@ -1,12 +1,15 @@
+import os
+import sys
 import time
 
 from csvUtil import processData, readData
 from logger import log
 from outputUtil import writeOutput
 
+sys.path.append("./src")
+from config.config import config
 
-# sys.path.append("./src")
-# print(sys.path)
+
 def run():
     start = time.time()
     log('-------------Fairmatic Assignment-------------')
@@ -30,4 +33,10 @@ def run():
 
 
 if __name__ == "__main__":
+    log('Please check the config file for setup in src/config/config.py')
+    try:
+        os.mkdir(os.path.join(sys.path[0], config.get('inputfilePath')))
+        log('Folder structure created.')
+    except:
+        pass
     run()

@@ -1,9 +1,8 @@
 "# instafair-assignment"
 
 ####command -  
-*> python run.py*
+*> run.bat* (execute as a bat file)
 
-Please run once to create folder structure.
 
 ###Example output 
 
