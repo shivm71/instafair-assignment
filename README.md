@@ -14,14 +14,14 @@ Reading department CSV
 Reading Product CSV
 Reading Order Prior CSV
 Reading Order Train CSV
-Reading data completed at 97.12 sec
+Reading data completed at 79.37 sec
 Processing Order data......
 Reading Order CSV
-Processing Order data completed at 152.4 sec
+Processing Order data completed at 113.93 sec
 Writing output data......
 Please check files/output/output.txt for output file.
-Writing data completed at 152.86 sec
-Programe execution time :  152.97 sec
+Writing data completed at 114.48 sec
+Programe execution time :  114.53 sec
 --------------------End-------------------- 
 
 
