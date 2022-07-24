@@ -12,8 +12,7 @@ if __name__ == "__main__":
     log('Please check the config file for setup in config/config.py')
     try:
         os.mkdir(os.path.join(sys.path[0], config.get('inputfilePath')))
-        log('Folder structure created Please place files and run again')
-        os.abort()
+        log('Folder structure created.')
     except:
         pass
     run()

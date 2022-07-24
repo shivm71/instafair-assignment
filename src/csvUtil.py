@@ -35,7 +35,7 @@ def readDept():
             deptRows = pd.read_csv(file, usecols=[0, 1]).values.tolist()
             chunkReader(deptRows, setDept, 1000)
     except FileNotFoundError:
-        log('departments.csv not found', isExit=True)
+        log('departments.csv not found', isExit=True, errorCode='fileError')
         raise FileNotFoundError
 
 
@@ -46,7 +46,7 @@ def readProduct():
             productRows = pd.read_csv(file, usecols=[0, 3]).values.tolist()
             chunkReader(productRows, setProducts, 1000)
     except FileNotFoundError:
-        log('products.csv not found', isExit=True)
+        log('products.csv not found', isExit=True, errorCode='fileError')
         raise FileNotFoundError
 
 
@@ -58,7 +58,7 @@ def readPriorOrder():
             orderPriorRows = pd.read_csv(file, usecols=[0, 1]).values.tolist()
             chunkReader(orderPriorRows, setPriorProducts, 50000)
     except FileNotFoundError:
-        log('order_products__prior.csv not found', isExit=True)
+        log('order_products__prior.csv not found', isExit=True, errorCode='fileError')
         raise FileNotFoundError
 
 
@@ -70,7 +70,7 @@ def readTrainOrder():
             orderTrainRows = pd.read_csv(file, usecols=[0, 1]).values.tolist()
             chunkReader(orderTrainRows, setTrainProducts, 10000)
     except FileNotFoundError:
-        log('order_products__train.csv not found', isExit=True)
+        log('order_products__train.csv not found', isExit=True, errorCode='fileError')
         raise FileNotFoundError
 
 
@@ -93,5 +93,5 @@ def processData():
             orderRows = pd.read_csv(file, usecols=[0, 2, 4, 5]).values.tolist()
             chunkReader(orderRows, setOrder, 30000)
     except:
-        log('orders.csv not found', isExit=True)
+        log('orders.csv not found', isExit=True, errorCode='fileError')
         raise FileNotFoundError
