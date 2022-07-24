@@ -1,11 +1,13 @@
 "# instafair-assignment"
 
-command "python run.py"
+####command -  
+*> python run.py*
 
 Please run once to create folder structure.
 
-Example output 
+###Example output 
 
+````
 Please check the config file for setup in config/config.py
 -------------Fairmatic Assignment-------------
 -------------------Start-------------------
@@ -22,6 +24,4 @@ Writing output data......
 Please check files/output/output.txt for output file.
 Writing data completed at 114.48 sec
 Programe execution time :  114.53 sec
---------------------End-------------------- 
-
-
+--------------------End--------------------
