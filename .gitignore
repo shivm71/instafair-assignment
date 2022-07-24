@@ -1,0 +1,5 @@
+/src/files/*
+*/__pycache__/*
+/.idea
+/.vscode
+
