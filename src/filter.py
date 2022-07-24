@@ -74,7 +74,5 @@ def setOrder(rows, start, end):
         productSet = set(productSet)
         for pId in productSet:
             deptId = productsMap[int(pId)]
-            tempans[deptId-1] += 1
+            tempans[deptId - 1] += 1
         outputDto[int(row[2])][int(row[3])] = tempans
-
-
