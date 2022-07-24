@@ -1,8 +1,7 @@
-"# instafair-assignment"
+# Instafair-assignment
 
-####command -  
+####command-  
 *> run.bat* (execute as a bat file)
-
 
 ###Example output 
 
