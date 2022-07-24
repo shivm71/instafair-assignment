@@ -1,6 +1,5 @@
 import time
 
-from config.config import config
 from csvUtil import processData, readData
 from logger import log
 from outputUtil import writeOutput

@@ -1,8 +1,9 @@
 import os
+
 from config.config import config
 
 
-def log(*args, isExit=False,errorCode = None):
+def log(*args, isExit=False, errorCode=None):
     for log in args:
         print(log, end=' ')
     if not isExit:

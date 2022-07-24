@@ -1,4 +1,4 @@
-"# instafair-assignment" 
+"# instafair-assignment"
 
 command "python run.py"
 
