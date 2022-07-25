@@ -1,3 +1,4 @@
+import os
 import sys
 
 from config.config import config, getPath
@@ -7,7 +8,7 @@ from utils.logger import log
 
 def writeOutput():
     orig_stdout = sys.stdout
-    f = open(getPath('outputFilePath') + config.get('outputFileName'), 'w')
+    f = open(os.path.join(getPath('outputFilePath') + config.get('outputFileName')), 'w')
     sys.stdout = f
     try:
         for daykey, day in outputDto.items():
@@ -18,8 +19,9 @@ def writeOutput():
                 for deptKey, dept in hour.items():
                     print('      ' + str(deptKey) + '. ' +
                           str(depts[deptKey + 1]).title() + ' -> ' + str(int((int(dept) / total) * 100)) + '%')
-    except:
-        raise Exception
+    except Exception:
+        log('Error while Writing order data.Please check folder permissions.', isExit=True)
+
     sys.stdout = orig_stdout
     log('Please check files/output/' + config.get('outputFileName') + " for output file.")
     f.close()

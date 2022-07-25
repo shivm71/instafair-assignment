@@ -1,7 +1,7 @@
 import os
 from threading import Thread
-import pandas as pd
 
+import pandas as pd
 from config.config import config, getPath
 from utils.filter import *
 from utils.logger import log
