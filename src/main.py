@@ -1,14 +1,11 @@
 import os
 import sys
 import time
-
-from csvUtil import processData, readData
-from logger import log
-from outputUtil import writeOutput
-
-sys.path.append("./src")
+from utils.csvUtil import processData, readData
+from utils.logger import log
+from utils.outputUtil import writeOutput
 from config.config import config
-
+print(sys.path)
 
 def run():
     start = time.time()

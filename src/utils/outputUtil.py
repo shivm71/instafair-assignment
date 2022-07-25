@@ -1,8 +1,8 @@
 import sys
 
 from config.config import config, getPath
-from filter import depts, outputDto
-from logger import log
+from utils.filter import depts, outputDto
+from utils.logger import log
 
 
 def writeOutput():
