@@ -1,8 +1,7 @@
 import os
-import sys
 import time
 
-from config.config import config
+from config import config
 from utils.csvUtil import processData, readData
 from utils.logger import log
 from utils.outputUtil import writeOutput
