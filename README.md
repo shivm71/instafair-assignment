@@ -1,7 +1,15 @@
 # Instafair-assignment
 
-####command-  
+####command-
 *> run.bat* (execute as a bat file)
+
+### Initial Steps
+1. run the script once by executing run.bat
+2. you'll get error(s) ignore and download the csv files from https://www.dropbox.com/s/1ao72uiciov4uxc/instacart_online_grocery_shopping_2017_05_01.tar.gz?dl=0
+3. Step 2 will also create a folder path to place the csv files.
+4. After downloading place all the extracted raw csv files in /src/files/csv
+5. run step 1
+
 
 ###Example output 
 
