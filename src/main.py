@@ -7,7 +7,7 @@ from utils.csvUtil import processData, readData
 from utils.logger import log
 from utils.outputUtil import writeOutput
 
-print(sys.path)
+# print(sys.path)
 
 
 def run():
